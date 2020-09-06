@@ -1,30 +1,29 @@
 ## first week summary
 
-###数组array,linkList,Stack,Queue,Deque
+### 数组array,linkList,Stack,Queue,Deque
 
-####array
+#### array
 - 在内存中，一块连续的区域
 - 需要预留空间
 - 插入和删除效率低，读取效率高，因为连续
 - 不利于扩展
 - 数组在读取的时候复杂度为0(1),插入复杂度为O(n),删除的时候复杂度为O(n)
-
-####linkList
+#### linkList
 - 链表不要求连续，它的插入删除速度快，
 - 内存利用率很高，不会浪费内存，并且可以进行灵活扩展
 - 但是不可以随机查找，必须从第一个开始进行查找
 - 链表在读取的时候复杂度0(n),插入和删除的复杂度为O(1)
 
-####Stack
+#### Stack
 - Stack是后进先出的，继承自Vector
 - 通过五个操作对类Vector进行扩展，允许将向量视为堆栈，它提供了通常的push和pop操作，以及取堆栈顶点的peek()方法、测试堆栈是否为空的empty方法
 
-####Queue
+#### Queue
 - 遵从先进先出原则
 - 使用时尽量避免add()和remove()方法,而是使用offer()来添加元素，使用poll()来移除元素
 - 可以通过返回值来判断是否成功。LinkedList实现了Queue接口。Queue通常不允许插入null元素
 
-####Deque
+#### Deque
 - 作为双向队列，支持插入删除的线性集合
 - 插入、删除、获取操作支持两种形式：快速失败和返回null或true/false
 - 既具有FIFO特点又具有LIFO特点，即是队列又是栈
